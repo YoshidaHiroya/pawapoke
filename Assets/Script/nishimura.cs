@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class nishimura : MonoBehaviour {
 	public Sprite oneSprite;
-	public Image twoprite;
-	public Image threeSprite;
+	public Sprite twoSprite;
+	public Image image;
+	public Image image2;
 	SpriteRenderer MainSpriteRenderer;
 
 	// Use this for initialization
@@ -16,15 +17,20 @@ public class nishimura : MonoBehaviour {
 	}
 
 	// 何かしらのタイミングで呼ばれる
-	public void ChangeStateToHold()
+	public void ChangeStateToHold()//5番目の顔
 	{
 		// SpriteRenderのspriteを設定済みの他のspriteに変更
 		// 例) HoldSpriteに変更
-		twoprite = this.GetComponent<Image>();
-		twoprite.sprite = oneSprite;
-		MainSpriteRenderer.sprite = oneSprite;
+		image = this.GetComponent<Image>();
+		image.sprite = oneSprite;
+		//MainSpriteRenderer.sprite = oneSprite;
+	}
 
-
-
+	public void ChangeStateToHoldSecond()//5番目の顔
+	{
+		// SpriteRenderのspriteを設定済みの他のspriteに変更
+		// 例) HoldSpriteに変更
+		image2 = this.GetComponent<Image>();
+		image2.sprite = oneSprite;
 	}
 }

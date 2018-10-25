@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class ButonText : MonoBehaviour {
 	Text Test;
 	GameObject Nishimura;
+	GameObject haikei;
+	Image image;
+	public Sprite haikei2;
 	// Use this for initialization
 	void Start()
 	{
 		Nishimura = GameObject.Find ("nishimura");
-
-
-
+		haikei = GameObject.Find ("haikei");
+		image = haikei.GetComponent<Image> ();
 
 
 		Test=this.gameObject.GetComponent<Text>();
@@ -35,6 +37,8 @@ public class ButonText : MonoBehaviour {
 		yield return new WaitUntil(Touch);
 		yield return new WaitWhile(Touch);
 		Test.text = "カンタ「臭いでヤンス〜〜〜〜〜！！！！」";
+		image.sprite = haikei2;
+
 	}
 	bool Touch()
 	{
