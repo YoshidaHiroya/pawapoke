@@ -26,11 +26,12 @@ public class nishimura : MonoBehaviour {
 		//MainSpriteRenderer.sprite = oneSprite;
 	}
 
-	public void ChangeStateToHoldSecond()//5番目の顔
+	public void ChangeStateToHoldSecond()//11番目の顔
 	{
 		// SpriteRenderのspriteを設定済みの他のspriteに変更
 		// 例) HoldSpriteに変更
 		image2 = this.GetComponent<Image>();
-		image2.sprite = oneSprite;
+		image2.sprite = twoSprite;
+		MainSpriteRenderer.sprite = twoSprite;
 	}
 }
