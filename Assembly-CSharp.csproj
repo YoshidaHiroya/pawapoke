@@ -52,8 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BGM\audiosource.cs" />
-     <Compile Include="Assets\bunnaguru.cs" />
+     <Compile Include="Assets\Script\bunnaguru.cs" />
      <Compile Include="Assets\Script\ButonText.cs" />
+     <Compile Include="Assets\Script\hontounokoto.cs" />
      <Compile Include="Assets\Script\nishimura.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
