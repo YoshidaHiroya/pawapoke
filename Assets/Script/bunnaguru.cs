@@ -64,7 +64,9 @@ public class bunnaguru : MonoBehaviour {
 		yield return new WaitUntil(Touch);
 		yield return new WaitWhile(Touch);
 		Test.text = "カンタ「はーいでヤンス....。」";
-
+		yield return new WaitUntil(Touch);
+		yield return new WaitWhile(Touch);
+		Test.text ="にしむら「さて、そろそろ町へ戻るか」";
 	}
 	bool Touch()
 	{
