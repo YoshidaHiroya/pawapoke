@@ -62,7 +62,7 @@ public class hontounokoto : MonoBehaviour {
 		Test.text = "カンタ「それなら納得でヤンス」";
 		yield return new WaitUntil(Touch);
 		yield return new WaitWhile(Touch);
-
+		Test.text = "にしむら「さて、そろそろ町へ戻るか」";
 
 	}
 	bool Touch()
