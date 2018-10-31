@@ -5,21 +5,27 @@ using UnityEngine.UI;
 
 public class bou1Script : MonoBehaviour {
 	GameObject hpgauge2;
+	GameObject hpgauge;
 	GameObject Bou2;
 	Animator animator;
+	GameObject battle;
 	AudioSource audiosource;
 	AudioSource audio;
 	Rigidbody rb;
 	BoxCollider bc;
+	Text text;
 	public AudioClip punch;
 	// Use this for initialization
 	void Start () {
 		hpgauge2 = GameObject.Find ("gauge2");
+		hpgauge = GameObject.Find ("gauge");
+		battle = GameObject.Find ("batal");
 		animator = this.gameObject.GetComponent<Animator> ();
 		audiosource = this.gameObject.GetComponent<AudioSource> ();
 		audio = this.gameObject.GetComponent<AudioSource> ();
 		rb = this.gameObject.GetComponent<Rigidbody> ();
 		bc=this.gameObject.GetComponent<BoxCollider>();
+		text=battle.GetComponent<Text> ();
 		Bou2 = GameObject.Find ("bou2");
 	}
 	
@@ -71,10 +77,18 @@ public class bou1Script : MonoBehaviour {
 		if(collision.gameObject.tag=="player2"){
 			animator.SetBool ("damage",true);
 		}
-		hpgauge2.GetComponent<Image> ().fillAmount -= 0.1f;
-		animator.SetBool ("damage",false);
+		//hpgauge2.GetComponent<Image> ().fillAmount -= 0.1f;
+		//animator.SetBool ("damage",false);
+		if(bc.size == new Vector3(30.0f ,30.0f ,1.0f))
+		{
+			hpgauge.GetComponent<Image> ().fillAmount -= 0.1f;
+		}
 
-
+	}
+	public void taoreru(){
+		//Debug.Log ("たおれる");
+		text.text="バトルシュウリョウ！";
+		animator.SetBool ("taoreru",true);
 	}
 
 }
