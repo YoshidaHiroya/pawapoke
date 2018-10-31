@@ -32,11 +32,11 @@ public class bou1Script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("right")) {
-			transform.Translate (20, 0, 0);
+			transform.Translate (40, 0, 0);
 			transform.localScale = new Vector3 (1,1,1);
 		}
 		if (Input.GetKeyDown ("left")) {
-			transform.Translate (-20, 0, 0);
+			transform.Translate (-40, 0, 0);
 			transform.localScale = new Vector3 (-1,1,1);
 		}
 		if (Input.GetKeyDown ("space")) {
@@ -79,9 +79,9 @@ public class bou1Script : MonoBehaviour {
 		}
 		//hpgauge2.GetComponent<Image> ().fillAmount -= 0.1f;
 		//animator.SetBool ("damage",false);
-		if(bc.size == new Vector3(30.0f ,30.0f ,1.0f))
+		if(bc.size == new Vector3(60.0f ,30.0f ,1.0f))
 		{
-			hpgauge.GetComponent<Image> ().fillAmount -= 0.1f;
+			hpgauge2.GetComponent<Image> ().fillAmount -= 0.1f;
 		}
 
 	}

@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "bouningenn.data.unityweb",
+"asmCodeUrl": "bouningenn.asm.code.unityweb",
+"asmMemoryUrl": "bouningenn.asm.memory.unityweb",
+"asmFrameworkUrl": "bouningenn.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
